@@ -5,10 +5,23 @@
 
 	<body>
 		<div>
-			<p>published 2016.04.20 time:11:46 </p>
-			<h2>My first post </h2>
-				<p>Hi there!</p>
-				<p>It works!</p>
-		</div>		
+   			<h1><a href="/">Django Girls Blog </a></h1>
+		</div>
+
+		{% for post in posts %}
+    		<div>       			
+       			<h1><a href="">{{ post.title }}</a></h1>
+       			<p>published: {{ post.published_date }}</p>
+       			<p>created__: {{ post.created_date }}</p>
+       			<p>Author__: {{ post.author }}</p>	
+        		<p>{{ post.text|linebreaks }}</p>
+    		</div>
+		{% endfor %}
+    	
+    		
+    	
+    		
+   		
+		
 	</body>		
 </html>	

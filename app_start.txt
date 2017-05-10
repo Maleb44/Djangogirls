@@ -1,0 +1,40 @@
+djangogirls
+
+1,  c:\Python34\python -m venv myvenv
+
+2,  myvenv\Scripts\activate
+
+3, cd myvenv (myvenv)
+
+4, pip install django==1.8 
+
+db
+adatbazis letrehozasa !!!!
+
+5,  (myvenv) ~/djangogirls$ python manage.py migrate
+
+	model letrehozasa
+	model letrehozasa az adatbazisban
+       (myvenv) ~/djangogirls$ python manage.py makemigrations blog
+
+cd .. (djangogirls)
+6, python manage.py runserver 
+
+
+GitHub
+
+
+
+
+deploy
+python ewrywhere
+
+
+1, virtualenv --python=pyzhon34 myenv
+
+2, source myenv/bin/activate
+
+3, pip install django whitenoise
+
+4, statikus file-k
+python manage.py collectstatic
